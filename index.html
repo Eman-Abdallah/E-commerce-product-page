@@ -224,18 +224,19 @@
         if (productsNumber.innerText < 1) {
             productNumber.style.display = "none";
             content.style.display = "block";
+            console.log('add');
         }
-
+        // increase number of products by 1
         function add() {
             num.innerText = parseInt(num.innerText) + 1
         }
-
+        // decrease number of products by 1
         function remove() {
             if (num.innerText > 0) {
                 num.innerText = parseInt(num.innerText) - 1
             }
         }
-
+        // add cart on click
         function addCart() {
             productNumber.innerText = num.innerText
             productsNumber.innerText = num.innerText;
@@ -243,6 +244,7 @@
             totalPrice.innerText = `$ ${125 * parseInt(productsNumber.innerText)}`
             if (productsNumber.innerText < 1) {
                 productNumber.style.display = "none";
+                content.style.display = "block";
             } else {
                 let el = num.innerText
                 content.style.display = "none";
@@ -251,7 +253,7 @@
 
             }
         }
-
+        // remove one product
         function deleteP() {
             if (productsNumber.innerText < 1) {
                 productNumber.style.display = "none";
