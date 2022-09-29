@@ -182,9 +182,9 @@ main {
     overflow: hidden
 }
 
-main .overlay {
+.overlay {
     position: absolute;
-    top: -120px;
+    top: 5px;
     left: 0;
     height: 100vh;
     width: 100%;
@@ -197,18 +197,18 @@ main .overlay {
     visibility: hidden;
 }
 
-main .overlay .overlayImg {
+.overlay .overlayImg {
     position: relative;
 }
 
-main .overlay .overlayImg .close {
+.overlay .overlayImg .close {
     position: absolute;
     top: -30px;
     right: 0px;
     cursor: pointer;
 }
 
-main .overlay .overlayImg .next {
+.overlay .overlayImg .next {
     position: absolute;
     top: 35%;
     right: -15px;
@@ -218,12 +218,12 @@ main .overlay .overlayImg .next {
     border-radius: 50%;
 }
 
-main .overlay .overlayImg .next svg {
+.overlay .overlayImg .next svg {
     z-index: 10000;
     padding: 2px 5px;
 }
 
-main .overlay .overlayImg .prev {
+.overlay .overlayImg .prev {
     position: absolute;
     top: 35%;
     left: -30px;
@@ -233,28 +233,28 @@ main .overlay .overlayImg .prev {
     border-radius: 50%;
 }
 
-main .overlay .overlayImg .prev svg {
+.overlay .overlayImg .prev svg {
     z-index: 10000;
     padding: 2px 5px;
 }
 
-main .overlay img {
+.overlay img {
     width: 500px;
     border-radius: 20px;
 }
 
-main .overlay .imgs {
+.overlay .imgs {
     display: flex;
 }
 
-main .overlay .imgs img {
+.overlay .imgs img {
     width: 100px;
     margin: 15px;
     border-radius: 20px;
     cursor: pointer;
 }
 
-main .overlay .imgs img:hover {
+.overlay .imgs img:hover {
     opacity: .5;
 }
 
